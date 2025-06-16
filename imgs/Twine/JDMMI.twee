@@ -1,0 +1,306 @@
+:: StoryTitle
+JDMMI
+
+
+:: StoryData
+{
+  "ifid": "A85C5DAA-BCAC-4FD8-9AD8-B0D479A6AA69",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Intro",
+  "zoom": 1
+}
+
+
+:: \ Aller acheter quelque chose (tu es faible ! )\  {"position":"1000,600","size":"100,100"}
+Tu rentres dans la boulangerie, il y a seulement 1 vieille dame devant toi. Puis c'est à ton tour et tu décides acheter une part de pizza que tu vas manger sur le chemin en rentrant chez toi ainsi qu'un pain au chocolat.
+[[Suivant->Enfin à la maison 1]]
+
+
+:: \ Avancer sur ta SAE\  {"position":"1000,1200","size":"100,100"}
+Ton projet te tient à coeur et tu décides de bosser dessus. Tu as des tâches à accomplir et à push sur git pour demain.
+[[Suivant->Code]]
+
+
+:: \ Rester discuter en bas de chez lui\  {"position":"500,325","size":"100,100"}
+Tu décides de rester avec tes amis. Vous parlez de la journée de cours qui vient de passer, du dernier scan de votre manga préféré ou du prochain live à organiser.
+[[Suivant->Blabla1]]
+
+
+:: A la maison {"position":"1100,1000","size":"100,100"}
+**18h30** : tu as pris un peu de temps pour souffler après cette journée de cours.
+Tu as du travail à faire mais a aussi sans doute du temps pour essayer le dernier jeu que tu as acheter sur Instant Gaming la veille.
+[[ Avancer sur ta SAE ]]
+[[Geeker Minecraft]]
+
+
+:: A la maison 2 {"position":"600,1450","size":"100,100"}
+**19h45** : tu es enfin chez toi après cette dure journée.
+[[Suivant->Manger]]
+
+
+:: A la maison 3 {"position":"400,1250","size":"100,100"}
+**19h25** : tu as pris un peu de retard mais ca va. Tu vas manger et tu vas te laver afin de pouvoir bien démarrer la soirée.
+[[Suivant->Choix 3]]
+
+
+:: Aller dodo {"position":"1600,1900","size":"100,100"}
+Tu es fatigué et tu décides d'aller dodo.
+[[Suivant->Fin Geek]]
+
+
+:: Bien travailler {"position":"700,2500","size":"100,100"}
+**23h54** : tu as bien travailler. Tu commences à fatiguer et tu as cours demain matin. Tu décides d'aller dodo afin d'être en forme pour les cours.
+[[Suivant->Fin correct]]
+
+
+:: Blabla1 {"position":"500,525","size":"100,100"}
+**19h15** : le temps est passé très vite et tu n'as pas vu le temps passer avec tes amis. 
+[[Suivant ->Blabla2]]
+
+
+:: Blabla2 {"position":"500,700","size":"100,100"}
+Tu te dépêches un peu pour rentrer car il est déjà un peu tard. Tu dis au revoir à Tom et reprends le chemin avec tes amis restant.
+[[Suivant->Blabla3]]
+
+
+:: Blabla3 {"position":"500,900","size":"100,100"}
+**19h20** Un peu plus long sur le chemin tu dois laisser tes amis et tourner à gauche pour pouvoir rentrer chez toi.
+[[Rentrer à la maison->Rentrer direct 2]]
+[[Finir de blablater]]
+
+
+:: Blabla4 {"position":"600,1275","size":"100,100"}
+**19h40** : le temps passe vite quand on est avec ses amis. Mais tu te souviens que tu as des choses à faire et tu rentre chez toi.
+[[Suivant->A la maison 2]]
+
+
+:: Bosser la SAE !\  {"position":"400,1600","size":"100,100"}
+Tu avances bien dans ton projet mais tu rencontres une difficulté à un moment. Tu passes beaucoup de temps à essayer de résoudre ce problème en consultant les docs, des forums sur internet ou en demandant à ton ami GPT. Malheuresement malgrès tout tes efforts le problème perciste et de nouveaux ce sont même créés.
+[[Bien travailler]]
+
+
+:: Choix 1 {"position":"800,200","size":"100,100"}
+**18h10** : vous arrivez en bas de chez Tom.
+[[ Rester discuter en bas de chez lui ]]
+[[Rentrer direct (tu as du travail pas le temps pour ça)]]
+
+
+:: Choix 3 {"position":"400,1400","size":"100,100"}
+**19h55** : Maintenant que tu es tout beau tout propre et que tu as encore ta soirée en main que veux tu faire ?
+[[Bosser la SAE ! ]]
+[[Geeker c'est la vie ! ]]
+
+
+:: Choix 4 {"position":"1000,1600","size":"100,100"}
+Il est **20h35**. Que décides-tu de faire?
+[[Résoudre ce foutu problème !!!]]
+[[Temporiser et aller manger]]
+
+
+:: Choix 5 {"position":"1200,2200","size":"100,100"}
+21h15 : maintenant que tu as pu prendre une bonne pause bien mérité, que décides-tu de faire ?
+[[Résoudre ce foutu problème !!->Le travail paye 2]]
+[[Profiter du reste de la soirée ]]
+
+
+:: Choix2 {"position":"600,2000","size":"100,100"}
+**20h45** : la planning de ta soirée à clairement pris un coup. Tu n'avais pas prévu d'arriver chez toi si tard mais ce n'est pas grave.
+[[Travailler un peu]]
+[[Il est trop tard pour pouvoir travailler un peu tu seras pas productif]]
+
+
+:: Code {"position":"1000,1400","size":"100,100"}
+Tu avances bien dans ton projet mais tu rencontres une difficulté à un moment. Tu passes beaucoup de temps à essayer de résoudre ce problème en consultant les docs, des forums sur internet ou en demandant à ton ami GPT. Malheuresement malgrès tout tes efforts le problème perciste et de nouveaux ce sont même créés.
+[[Suivant->Choix 4]]
+
+
+:: Dessiner avec de la musique en fond en fond {"position":"100,2600","size":"100,100"}
+Tu saisis des feuilles et un crayon de papier et tu commences à dessiner. Tu commences par faire 10 paires d'oeils, 10 bouches, 10 mains et 10 têtes complètes. 
+**00h10** : tu dessines ensuite des décors et des personnages sur la même feuille. Tu fais appel à toute ton imagination afin de créer une oeuvre d'art. Tu en es tellement fier que tu décides de la poster sur instagram. Puis tu vas dodo fier de toi.
+[[Fin Artiste]]
+
+
+:: Enfin à la maison 1 {"position":"1000,800","size":"100,100"}
+**18h20** : tu rentrer enfin chez toi le ventre bien rempli de tes achats à la boulangerie mangé en chemin.
+[[Suivant ->A la maison]]
+
+
+:: Enfin à la maison 2 {"position":"1200,800","size":"100,100"}
+**18h15** : tu rentres chez toi fier du temps qu'il te reste.
+[[Suivant ->A la maison]]
+
+
+:: Fin\  {"position":"1300,2800","size":"100,100"}
+Tu as débloqué la fin **DEMI BOSSEUR**
+Tu as pu avancer un peu ton projet mais tu as reporté au lendemain le problème que tu as eu.Ce n'est pas très grave, le lendemain tu as été très en forme. Tu as bien suivi les cours et le soir tu as très vite résolu ton problème grâce à un camarade de classe.
+Tu as aussi pu avancer dans ta série du moment (vivement Arcane saison 2).
+
+//Nous vous invitons à jouer au jeu de Antonin où on incarne le même étudiant qui se réveille le lendemain matin.//
+
+
+:: Fin Artiste {"position":"100,2800","size":"100,100"}
+Tu as débloqué la fin **ARTISTE**.
+Plutôt que de poursuivre ton projet, tu as décider de cultiver ta créativité en dessinant. En prenant des inspirations de plusieurs médias tu as créer quelque chose de beau, tu peux être fier de toi. 
+
+//Nous vous invitons à jouer au jeu de Antonin où on incarne le même étudiant qui se réveille le lendemain matin.//
+
+
+:: Fin Dark Souls {"position":"300,2800","size":"100,100"}
+Tu as débloqué la fin **DARK SOULS**.
+
+Tu n'as pas travailllé de la soirée tu as pris du retard sur ton projet mais ce n'est pas grave. Certe tu es arrivé en cours en retard mais tu avais une cause plus grande à défendre. Pourrais tu te regarder encore dans un mirroir si tu abandonnais devant un boss de Dark Souls ?
+
+//Nous vous invitons à jouer au jeu de Antonin où on incarne le même étudiant qui se réveille le lendemain matin.//
+
+
+:: Fin Geek {"position":"1600,2800","size":"100,100"}
+Tu as débloqué la fin **Minecraft**.
+Tu n'as pas du tout avancé sur tes projets en jouant dès que tu es rentré. Ton groupe a été déçu que tu ais préféré joué plûtôt que davancer dans votre planning de SAE. Les jours suivant tu as répété ce processus, votre projet n'a pas pu être fini par ta faute. Néanmoins tu as pu découvrir que tu ne pouvais pas jouer à Minecraft avec tout tes amis et tu as pu faire le tri. Tu finis donc seul.
+
+
+
+//Nous vous invitons à jouer au jeu de Antonin où on incarne le même étudiant qui se réveille le lendemain matin.//
+
+
+
+
+
+:: Fin bosseur {"position":"900,2800","size":"100,100"}
+Tu as débloqué la fin **VRAI BOSSEUR**.
+Toi t'es un vrai ! Quand tu rencontres un problème tu vas jusqu'au bout ! Les murs tu les brises ! Tes camarades de projet ont été fier de toi. Tu t'es couché tard en revanche et tu as un peu dormi dans les cours du lendemain. Mais pas grave, TU AS RESOLU CE FOUTU PROBLEME !!!
+
+
+//Nous vous invitons à jouer au jeu de Antonin où on incarne le même étudiant qui se réveille le lendemain matin.//
+
+
+:: Fin bosseur 2 {"position":"1100,2800","size":"100,100"}
+Tu as débloqué la fin **BON BOSSEUR**.
+Tu as bien géré ton temps. Tes camarades de projet ont été fier de toi. Tu t'es couché tard en revanche et tu as un peu dormi dans les cours du lendemain. Mais pas grave, TU AS RESOLU CE FOUTU PROBLEME !!!
+
+//Nous vous invitons à jouer au jeu de Antonin où on incarne le même étudiant qui se réveille le lendemain matin.//
+
+
+:: Fin correct {"position":"700,2800","size":"100,100"}
+Tu as débloqué la fin **BOSSEUR CORRECT**.
+Même si tu as commencé tard, tu as pu travailler un peu et tu as pu avancer dans ton projet. Le lendemain tu as été en forme pour tes cours. Néanmoins tu feras gaffe en sortant des cours pour ne pas rentrer aussi tard chaque fois même si tu apprécies ces moments d'échanges entre amis.De temps en temps mais pas tous les soirs.
+
+//Nous vous invitons à jouer au jeu de Antonin où on incarne le même étudiant qui se réveille le lendemain matin.//
+
+
+:: Fin lecteur {"position":"500,2800","size":"100,100"}
+Tu as débloqué la fin **LECTEUR DU DIMANCHE**.
+
+Un peu de lecture ne peut pas faire de mal. Certe tu n'as pas avancé sur tes projets, certe tu avais un planning que tu n'as pas suivi. Mais tu as continué de lire un très bon comics qui a inspiré un excellent jeu. En plus de ça, Fable peut te servir de source d'inspiration pour tes projets futures. C'est tout bénéf.
+
+//Nous vous invitons à jouer au jeu de Antonin où on incarne le même étudiant qui se réveille le lendemain matin.//
+
+
+:: Finir de blablater {"position":"600,1050","size":"100,100"}
+Vous discutez encore un peu.
+[[Suivant->Blabla4]]
+
+
+:: Geeker DarkSouls {"position":"300,2600","size":"100,100"}
+Tu sors ta manette et tu décides de taper ta meilleur game de Dark Souls. Tu reprends au dernier boss sur lequel tu étais bloqué et va passer ta soirée à mourir en boucle.A **2h00** du matin tu décides d'aller te coucher avant de t'évanouir d'épuisement.Tu retentras ta chance le lendemain. **TU ES MORT**
+[[Suivant->Fin Dark Souls]]
+
+
+:: Geeker Minecraft {"position":"1600,1100","size":"100,100"}
+Vous lancez Discord et vous commencez une partie de Minecraft. Une survie pour être exactement et vous avez pour objectif de faire le manoir avec 3 autres amis (d'où discord).
+[[Suivant->Minecraft]]
+
+
+:: Geeker c'est la vie !\  {"position":"200,1600","size":"100,100"}
+Tu préfère profiter de ta soirée pour jouer à un jeu vidéo.
+[[Lancer Mincraft->Geeker Minecraft]](Jouer avec des amis)
+[[Lancer DarkSouls->Geeker DarkSouls]](Jouer seul)
+
+
+:: Il est trop tard pour pouvoir travailler un peu tu seras pas productif {"position":"275,2225","size":"100,100"}
+Tu as enfin le temps de te poser. Il est plus tard que ce que tu avais prévu mais pas grave, tu rattraperas ton retard demain, flemme pour ce soir. Tu as du choix dans tes activités du soir !
+[[Geeker DarkSouls]]
+[[Lire un comics]]
+[[Dessiner avec de la musique en fond en fond]]
+
+
+:: Intro {"position":"800,0","size":"100,100"}
+Tu viens de finir les cours, il est **18h05** quand tu sors du batiment avec tes amis. Vous habitez tous du même côté de ma ville et décidez de rentrer ensemble.
+[[Suivant->Choix 1]]
+
+
+:: Laver {"position":"600,1750","size":"100,100"}
+Tu as bien transpiré dans ta journée et tu vas ensuite te laver afin de sentir bon (on est des devs mais pas trop).
+[[Suivant->Choix2]]
+
+
+:: Laver 2 {"position":"1200,1900","size":"100,100"}
+Tu as bien transpiré dans ta journée et tu vas ensuite te laver afin de sentir bon (on est des game devs mais pas trop).
+[[Suivant->Choix 5]]
+
+
+:: Le travail paye {"position":"900,2200","size":"100,100"}
+**1h30** : tu as passé ton projet. Tu as pu en faire même plus que prévu après avoir trouvé la solution à ton problème. Vers 23h,tu as commandé un uber eat afin de manger devant ton pc. Tu as été bien focus et productif. Il est l'heure d'aller se coucher soldat !
+[[Suivant->Fin bosseur]]
+
+
+:: Le travail paye 2 {"position":"1100,2525","size":"100,100"}
+**1h30** : Tu as passé le reste de ta soirée sur ton projet à bosser sérieusement..Tu as pu en faire même plus que prévu après avoir trouvé la solution à ton problème. Tu as été bien focus et productif. Il est l'heure d'aller se coucher soldat !
+[[Suivant->Fin bosseur 2]]
+
+
+:: Lire un comics {"position":"500,2600","size":"100,100"}
+Un peu de lecture pour sortir de tous ces écrans, tu saisis le tome 3 de la série Fable (excellent comics de Bill Willingham dont est issu le jeu The Wolf Among US).Tu plonges dans la narration de cet univers et dévores ce tome. Il est **23h05** et tu décides d'aller dodo après la lecture de ce comics.
+[[Suivant->Fin lecteur]]
+
+
+:: Manger {"position":"600,1600","size":"100,100"}
+Vu l'heure tu auras pas le temps de faire tout ce que tu voulais. Tu décides de manger. Tu as déjà de prêt une escalope à la crème avec des champignons.
+[[Suivant->Laver]]
+
+
+:: Minecraft {"position":"1600,1500","size":"100,100"}
+**00h15**: lors de ta partie avec tes amis, rien ne se passe comme prévu. Vous n'avez pas réussi à vous stuff et n'êtes pas allé dans le manoir. Cependant, tu as passé une bonne soirée et tu as beaucoup ri.
+[[Suivant->Aller dodo]]
+
+
+:: Profiter du reste de la soirée\  {"position":"1300,2400","size":"100,100"}
+Tu as déjà bien travaillé ce soir. Le problème de ton projet pourra attendre demain. Tu décides de profiter du reste de la soirée pour regarder des épisodes de ta série préférée.
+[[Suivant->soirée pépouze]]
+
+
+:: Rentrer direct (tu as du travail pas le temps pour ça) {"position":"1075,325","size":"100,100"}
+Sur le chemin tu passes devant une boulangerie, il y a pas trop de monde et une délicieuse odeur de pizza au fromage, part de flan ou encore de baguette vient s'installer dans tes narines.
+[[Suivant->Sur le chemin 1]]
+
+
+:: Rentrer direct 2 {"position":"400,1050","size":"100,100"}
+Tu as pris du retard sur ton planning de la soirée et tu décides de faire un aurevoir de la main pour t'enfuir vite chez toi.
+[[Suivant->A la maison 3]]
+
+
+:: Résoudre ce foutu problème !!! {"position":"900,2000","size":"100,100"}
+Tu n'as qu'un seul objectif, réussir ce que tu devais faire. Tu décides donc de persister dans cette voie ! Un vrai guerrier n'abandonne jamais !!!
+[[Suivant->Le travail paye]]
+
+
+:: Sur le chemin 1 {"position":"1075,475","size":"100,100"}
+Tu hésites à rentrer dnas cette boulangerie.
+[[ Aller acheter quelque chose (tu es faible ! ) ]]
+[[ Tu as déjà une délicieuse escalope de dinde à la crème et aux champignon accompagné de riz qui t'attends chez toi et tu passes ton chemin (tu es fort !!! )->Enfin à la maison 2]]
+
+
+
+:: Temporiser et aller manger {"position":"1200,1700","size":"100,100"}
+Tu décides de prendre une pause.  Tu décides de manger. Tu as déjà de prêt une escalope à la crème avec des champignons.
+[[Suivant->Laver 2]]
+
+
+:: Travailler un peu {"position":"700,2300","size":"100,100"}
+Tu vas un peu bosser sur ton pc pour avancer ton projet de groupe. Tu avances à ton rythme sans forcer.
+[[Suivant->Bien travailler]]
+
+
+:: soirée pépouze {"position":"1300,2600","size":"100,100"}
+**23h** : la fin de soirée à été tranquille, tu décides d'aller dodo afin d'être en forme pour les cours du lendemain.
+[[Suivant->Fin ]]
