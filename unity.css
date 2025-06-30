@@ -6,12 +6,16 @@
 
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: black;
     color: white;
+}
+
+h4
+{
+    text-align: center;
 }
 
 nav {
@@ -174,6 +178,153 @@ nav {
 .hidden {
     display: none;
 }
+/*/////////////////////////////////////////////OWEN/////////////////////////////////////////////////*/
+/*Indication*/
+.fst-italic.text-muted.mb-2 {
+    font-size: 0.5rem; /* Texte un peu plus petit */
+    color: rgba(255, 255, 255, 0.8); /* Blanc avec opacité */
+    background-color: #915ac4; /* Arrière-plan violet */
+    padding: 6px 12px; /* Un peu de padding pour respirer */
+    border-radius: 12px; /* Bord arrondi important */
+    display: inline-block; /* Pour que le background s'adapte au texte */
+}
+
+
+/* Grille galerie */
+.simple-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    max-height: 300px; /* Affiche ~1 ligne */
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+}
+
+    .simple-gallery.expanded {
+        max-height: 2000px; /* Suffisamment grand pour tout montrer */
+    }
+figcaption
+{
+    color : #151515;
+    text-align: center;
+}
+/* Figures stylées */
+.simple-gallery figure {
+    border: 2px solid #915ac4;
+    border-radius: 16px;
+    padding: 10px;
+    background: white;
+    box-shadow: 0 0 12px rgba(145, 90, 196, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+        .simple-gallery figure:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px #915ac4aa;
+        }
+
+    .simple-gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+
+/* Bouton toggle */
+#toggle-btn {
+    display: block; /* pour que margin auto fonctionne */
+    margin: 1rem auto 0 auto; /* centre horizontalement avec margin auto, 1rem top, 0 bottom */
+    background-color: #915ac4;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem; /* un peu moins grand */
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 0.9rem; /* taille un peu plus petite */
+    transition: background-color 0.3s, transform 0.3s;
+    width: fit-content; /* bouton s'adapte à son contenu */
+}
+
+    #toggle-btn:hover {
+        background-color: #7e45b0;
+        transform: scale(1.03);
+    }
+
+/*///////////////////Outils et mécanismes////////////////////*/
+.tool-mechanism-list {
+    list-style: none;
+    padding-left: 0;
+    max-width: 1000px;
+}
+
+    .tool-mechanism-list li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .tool-mechanism-list img {
+        width: 10%;
+        height: auto;
+        max-height: 600px;
+        object-fit: contain;
+        margin-right: 1rem;
+        border-radius: 6px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .tool-mechanism-list span {
+        flex: 1;
+        font-size: 1rem;
+    }
+
+    .tool-mechanism-list img:hover {
+        transform: scale(2); /* effet zoom au survol */
+        z-index: 1;
+    }
+
+    /*Boutons outils et méchanismes*/
+/* Conteneur pour centrer les boutons */
+.tools-toggle-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Styles des boutons */
+#btn-outils,
+#btn-mechanismes {
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    background-color: #222; /* bouton par défaut */
+    color: #915ac4;
+    border: 1px solid #444;
+}
+
+    /* Hover effect */
+    #btn-outils:hover,
+    #btn-mechanismes:hover {
+        transform: scale(1.05);
+        background-color: #2a2a2a;
+        border-color: #666;
+        color: #ffffff;
+    }
+
+/* Bouton actif (à ajouter dynamiquement via JS) */
+.btn-active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+
+
+
 /*//////////////////////////////////////////////////ROF////////////////////////////////////////////////////*/
 
 /*Partie de la galerie d'image*/
@@ -191,6 +342,65 @@ nav {
     transform: scale(1.05);
     box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
 }
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes fixes */
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr; /* 1 colonne sur mobile */
+    }
+}
+
+.gallery-img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px #915ac4;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+    .gallery-img:hover {
+        transform: scale(1.05);
+    }
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+    .lightbox.hidden {
+        display: none;
+    }
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 12px;
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 40px;
+    color: #915ac4;
+    cursor: pointer;
+}
+
 
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////*/

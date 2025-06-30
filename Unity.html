@@ -7,7 +7,7 @@
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8jhAXgLb4+amr5I62dT6/7uSG6ch0AiMkOZcwzlh8uNGK7" crossorigin="anonymous" />
-
+   
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="unity.css">
 
@@ -28,7 +28,7 @@
             <li><a href="index.html">Accueil</a></li>
             <li><a href="Unity.html">Projets Unity</a></li>
             <li><a href="Web.html">Projets Web</a></li>
-            <li><a href="#creations-audiovisuelles">Créations audiovisuelles</a></li>
+            <li><a href="CN.html">Créations audiovisuelles</a></li>
         </ul>
     </nav>
 
@@ -37,65 +37,247 @@
         <h1>PROJETS UNITY</h1>
     </header>
 
-    <body>
 
-        <div class="tabs">
-            <button class="tab-button active" data-tab="racines">Les Racines Fraternelles</button>
-            <button class="tab-button" data-tab="pokemon">FanGame Pokémon</button>
-            <button class="tab-button" data-tab="ROF2">ROF2</button>
-            <button class="tab-button" data-tab="jeux">Minis Jeux Unity</button>
-        </div>
+    <div class="tabs">
+        <button class="tab-button active" data-tab="racines">Les Racines Fraternelles</button>
+        <button class="tab-button" data-tab="pokemon">FanGame Pokémon</button>
+        <button class="tab-button" data-tab="ROF">Rise of Freedom</button>
+        <button class="tab-button" data-tab="jeux">Minis Jeux Unity</button>
+    </div>
 
-        <div class="tab-content" id="racines">
-            <p>Vous avez choisi de regarder <strong>Les Racines Fraternelles</strong>.</p>
-        </div>
+    <!-- Section OWEN-->
+    <div class="tab-content" id="racines">
+        <section class="container mt-5 text-start">
 
-        <div class="tab-content hidden" id="jeux">
-            <p>Vous avez choisi de regarder <strong>les autres jeux Unity</strong>.</p>
-        </div>
+            <h2 class="text-center mb-4 display-5">Les Racines Fraternelles</h2>
 
-        <div class="tab-content hidden" id="pokemon">
-            <p>Vous avez choisi de regarder <strong>mon fangame pokémon</strong>.</p>
-        </div>
+            <br />
 
-        <div class="tab-content hidden" id="ROF2">
-            <div class="container mt-4 fade-in">
-                <h2 class="text-center mb-4">🎮 ROF2 – Racines Fraternelles</h2>
+            <h4>Trailer des Racines Fraternelles</h4>
+            <!-- Trailer vidéo -->
+            <div style="max-width: 600px; margin: 0 auto; box-shadow: 0 4px 10px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden;">
+                <iframe width="100%"
+                        height="340"
+                        src="https://www.youtube.com/embed/50YdWLER4zI"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        style="display: block;">
+                </iframe>
+            </div>
+
+            <!-- Mention projet scolaire -->
+            <p class="fst-italic text-muted mb-2">Projet universitaire réalisé entre septembre 2024 et janvier 2025.</p>
+
+            <!-- Présentation -->
+            <div class="mb-4">
+                <h4>Contexte</h4>
+                <p>
+                    Ce projet a été réalisé dans le cadre d’un cours de création de jeu vidéo sur >Unity 3D (low poly).
+                    Trois thèmes étaient proposés : <em>amitié, fraternité, solitude et sororité</em>. Avec Jules Cespedes et Thomas Simon,
+                    nous avons choisi le thème de la <strong>fraternité</strong>, un sujet qui nous a particulièrement inspirés.
+                </p>
+            </div>
+            <br />
+
+            <div class="mb-4">
+                <h4>🎮 Gameplay</h4>
+
+                <!-- Bouton afficher/masquer la boucle -->
 
                 <p>
-                    <strong>ROF2</strong>, pour <em>Racines Fraternelles</em>, est un jeu en <strong>2D pixel art développé sous Unity</strong> dans le cadre d’un projet universitaire.
-                    Le thème imposé était <strong>Martin Luther King</strong>. Avec mes camarades, nous avons choisi de créer un jeu à plusieurs niveaux, proposant <strong>différents types de gameplay</strong>.
+                    Notre jeu est en vue isométrique, offrant une perspective de loin sur les différents plateaux.
+                    Le joueur doit se déplacer de plateau en plateau, chacun représentant un mini-niveau.
+                    Sur chaque plateau, il faut résoudre des énigmes pour ouvrir la porte qui mène au niveau suivant.
                 </p>
+
+                <!-- Image + texte centré verticalement -->
+                <div style="display: flex; align-items: center; justify-content: center; gap: 1.5rem; margin: 2rem 0;">
+                    <img src="imgs/game_view_example.png" alt="Vue du jeu" style="max-width: 300px; height: auto; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+                    <span style="font-size: 1.25rem; font-weight: 600;">Vue du jeu</span>
+                </div>
 
                 <p>
-                    J’ai participé activement au projet en assurant à la fois une partie de la <strong>programmation en C#</strong>, et en réalisant les <strong>designs et animations en pixel art</strong>, un style graphique que j’affectionne particulièrement.
+                    Pour cela, le joueur peut utiliser divers mécanismes présents sur les plateaux ainsi que des outils qu'il débloquera au fil de l’aventure.
+                    En parallèle, il doit collecter les pages du carnet de Liam, qui contiennent des informations variées :
+                    des récits du lore, des descriptions de plantes étranges, ainsi que des détails sur les outils et mécanismes.
                 </p>
+
+                <br />
+
+                <!-- Présentation des outils et mécanismes -->
+
+                <div style="margin-top: 2rem;">
+                    <div class="tools-toggle-container">
+                        <button id="btn-outils" class="btn btn-primary me-2">Outils</button>
+                        <button id="btn-mechanismes" class="btn btn-outline-primary">Mécanismes</button>
+                    </div>
+
+                    <!-- OUTILS -->
+                    <ul class="tool-mechanism-list" id="outils-section">
+                        <li>
+                            <img src="imgs/Owen/08.png" alt="Arrosoir">
+                            <span><strong>Arrosoir</strong> : Permet de faire pousser en très grand des plantes.</span>
+                        </li>
+                        <li>
+                            <img src="imgs/Owen/10.png" alt="Cisaille">
+                            <span><strong>Cisaille</strong> : Permet de couper les hautes herbes.</span>
+                        </li>
+                        <li>
+                            <img src="imgs/Owen/12.png" alt="Gants">
+                            <span><strong>Gants</strong> : Permettent de déplacer des caisses à distance.</span>
+                        </li>
+                        <li>
+                            <img src="imgs/Owen/11.png" alt="Robot">
+                            <span><strong>Robot</strong> : Permet d'accéder à des zones inaccessibles au joueur.</span>
+                        </li>
+                    </ul>
+
+                    <!-- MÉCANISMES -->
+                    <ul class="tool-mechanism-list" id="mechanismes-section" style="display: none;">
+                        <li>
+                            <img src="imgs/Owen/14.png" alt="Bouton poussoir">
+                            <span><strong>Bouton poussoir</strong> : Active un mécanisme pendant un laps de temps limité.</span>
+                        </li>
+                        <li>
+                            <img src="imgs/Owen/13.png" alt="Plaque de pression">
+                            <span><strong>Plaque de pression</strong> : S’active lorsqu’une caisse est posée dessus.</span>
+                        </li>
+                        <li>
+                            <img src="imgs/Owen/09.png" alt="Levier">
+                            <span><strong>Levier</strong> : Permet d’activer ou désactiver certains mécanismes.</span>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                <br />
 
                 <p>
-                    Chaque niveau du jeu aborde des mécaniques variées (plateforme, infiltration, dialogue narratif...) pour transmettre un message engagé à travers le gameplay.
+                    Un aspect important du gameplay est la manipulation de la caméra autour du plateau.
+                    Le joueur peut déplacer la caméra pour révéler des éléments cachés derrière des arbres ou d’autres objets,
+                    ce qui est essentiel pour trouver la solution aux énigmes et progresser.
                 </p>
+            </div>
 
-                <h4 class="mt-4">🎨 Galerie de pixel art</h4>
-                <div class="row g-3">
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <img src="imgs/cn/rof2/pixelart1.png" class="img-fluid rounded shadow pixel-hover" alt="Sprite 1">
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <img src="imgs/cn/rof2/pixelart2.png" class="img-fluid rounded shadow pixel-hover" alt="Sprite 2">
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <img src="imgs/cn/rof2/pixelart3.png" class="img-fluid rounded shadow pixel-hover" alt="Sprite 3">
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                        <img src="imgs/cn/rof2/pixelart4.png" class="img-fluid rounded shadow pixel-hover" alt="Sprite 4">
-                    </div>
-                    <!-- Ajoute d'autres images ici -->
+
+
+            <br />
+            <!-- Pitch -->
+            <div class="mb-4">
+                <h4>🎮 Spitch du jeu</h4>
+                <p>
+                    <em>Les Racines Fraternelles</em> est un jeu de puzzle en solo destiné aux jeunes joueurs.
+                    Le joueur incarne <strong>Owen</strong>, un jeune écureuil déterminé à retrouver son frère <strong>Liam</strong>,
+                    disparu dans les vastes jardins où il travaille.
+                </p>
+                <p>
+                    Le gameplay repose sur la résolution d’énigmes et l’<strong>exploration</strong>.
+                    Les joueurs doivent faire preuve d’ingéniosité pour surmonter des obstacles dans une <strong>forêt fantastique en 3D</strong>.
+                </p>
+            </div>
+            <br />
+            <!-- Carousel -->
+            <h4>Galerie d'assets 3D que j'ai réalisé</h4>
+            <div class="gallery-container">
+                <div class="simple-gallery" id="collapsible-gallery">
+                    <figure><img src="imgs/Owen/03.png" alt="Barrière"><figcaption>Barrière</figcaption></figure>
+                    <figure><img src="imgs/Owen/04.png" alt="Plante volcan"><figcaption>Plante volcan</figcaption></figure>
+                    <figure><img src="imgs/Owen/05.png" alt="Buisson nuage"><figcaption>Buisson nuage</figcaption></figure>
+                    <figure><img src="imgs/Owen/08.png" alt="Outil - Arrosoir"><figcaption>Outil - Arrosoir</figcaption></figure>
+                    <figure><img src="imgs/Owen/09.png" alt="Mécanisme - Levier"><figcaption>Mécanisme - Levier</figcaption></figure>
+                </div>
+
+                <button id="toggle-btn">
+                    ▼ Voir plus
+                </button>
+            </div>
+
+
+        </section>
+    </div>
+
+
+    <!-- Section UnityGames -->
+
+    <div class="tab-content hidden" id="jeux">
+        <p>Vous avez choisi de regarder <strong>les autres jeux Unity</strong>.</p>
+    </div>
+
+    <!-- Section POKEMON -->
+
+    <div class="tab-content hidden" id="pokemon">
+        <p>Vous avez choisi de regarder <strong>mon fangame pokémon</strong>.</p>
+    </div>
+
+    <!-- Section ROF -->
+    <div class="tab-content hidden" id="ROF">
+        <section class="container mt-5">
+            <h2 class="text-start mb-4 display-5">🎮 ROF – Rise of Freedom</h2>
+
+
+            <!-- Présentation générale -->
+            <div class="mb-4">
+                <h4>Contexte du projet</h4>
+                <p>
+                    <strong>ROF</strong>, pour <em>Rise of Freedom</em>, est un jeu en 2D pixel art réalisé en collaboration avec <strong>Tom Archimbaud</strong> dans le cadre d’un projet universitaire.
+                    Le thème imposé portait sur Martin Luther King et sa lutte contre la ségrégation raciale.
+                </p>
+            </div>
+            <br />
+            <!-- Type de jeu -->
+            <div class="mb-4">
+                <h4>Type de jeu</h4>
+                <p>
+                    Nous avons opté pour un <strong>jeu de plateforme en 2D</strong>, intégralement développé sous <strong>Unity en C#</strong>.
+                    Passionnés par le <strong>pixel art</strong>, nous avons conçu l’ensemble des <strong>sprites et animations</strong> à l’aide du logiciel <strong>Piskel</strong>.
+                </p>
+            </div>
+            <br />
+            <!-- Gameplays -->
+            <div class="mb-4">
+                <h4>Mécaniques de jeu</h4>
+                <p>Chaque niveau propose un gameplay unique, illustrant un aspect du combat de Martin Luther King :</p>
+                <ul>
+                    <li> <strong>Discours pacificateurs</strong> : apaiser des foules en récupérant les discours de manifestants isolés.</li>
+                    <li> <strong>Boycott des bus</strong> : mini-jeu illustrant cette action emblématique du mouvement.</li>
+                    <li> <strong>Recherche de partisans</strong> : (niveau non finalisé) rassembler des alliés pour rejoindre la cause.</li>
+                </ul>
+            </div>
+
+            <!-- Outils utilisés -->
+            <div class="mb-4">
+                <h4>🛠 Outils et technologies</h4>
+                <ul>
+                    <li><strong>Moteur :</strong> Unity (C#)</li>
+                    <li><strong>Pixel Art :</strong> Piskel</li>
+                </ul>
+            </div>
+
+            <!-- Galerie carousel -->
+            <!-- Galerie carousel -->
+            <div class="gallery-container mb-4">
+                <h4> Galerie d'animations – Sprites du jeu</h4>
+                <br />
+                <div class="gallery-grid">
+                    <img src="imgs/ROF/MLK.gif" alt="Sprite MLK" class="gallery-img">
+                    <img src="imgs/ROF/ManifestantBase.gif" alt="Sprite 2" class="gallery-img">
+                    <img src="imgs/cn/rof2/pixelart3.gif" alt="Sprite 3" class="gallery-img">
+                    <img src="imgs/cn/rof2/pixelart4.gif" alt="Sprite 4" class="gallery-img">
                 </div>
             </div>
-        </div>
 
+            <!-- Lightbox preview -->
+            <div id="lightbox" class="lightbox hidden">
+                <span class="close">&times;</span>
+                <img class="lightbox-content" id="lightbox-img" alt="">
+            </div>
 
-    </body>
+        </section>
+    </div>
+
 
     <!-- Pied de page -->
     <footer>
@@ -110,5 +292,9 @@
             crossorigin="anonymous">
     </script>
 
+    <!-- Bootstrap JS + Popper -->
+
 </body>
+
+
 </html>
